@@ -3,6 +3,7 @@
     --color-one: #e8d887;
     --color-two: #ebe2ae;
     --color-three: #46929c;
+    --color-four: #e8e8cf;
     --font-big: 2.5rem;
     --font-medium : 1.5rem;
     background-color: var(--color-one);
@@ -17,7 +18,7 @@ h1 {
 }
 
 .top-section {
-    width: 99vw;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -33,10 +34,10 @@ img {
 
 nav {
     height: 3rem;
-    width: 99vw;
+    border-radius: 3rem;
     background-color: var(--color-two);
-    margin: 1rem 0 2rem;
     font-size: var(--font-medium);
+    margin: 1rem 3rem 3rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -57,9 +58,13 @@ h3 {
     text-decoration: underline;
 }
 
-#datos {
+#datos, #trabajos, #educacion {
+    background-color: var(--color-two);
+    border-radius: 3rem;
+    padding: 2rem;
     font-size: var(--font-medium);
     margin-left: 2rem;
+    margin-right: 2rem;
     max-width: 100%, 45ch;
     margin-top: 4rem;
 }
@@ -68,15 +73,11 @@ h3 {
     font-weight: 600;
 }
 
-#trabajos {
-    font-size: var(--font-medium);
-    margin-left: 2rem;
-    max-width: 100%, 45ch;
-    margin-top: 4rem;
-    position: relative;
+#trabajos p{
+    font-weight: 600;
 }
 
-#trabajos p{
+#educacion p {
     font-weight: 600;
 }
 
@@ -91,7 +92,7 @@ span:hover {
 .hidden {
     height: 25vh;
     width: 25vw;
-    background-color: var(--color-two);
+    background-color: var(--color-four);
     position: absolute;
     border-radius: 3rem;
     display: none;
@@ -118,14 +119,4 @@ span:hover {
     cursor: pointer;
 }
 
-#educacion {
-    font-size: var(--font-medium);
-    margin-left: 2rem;
-    max-width: 100%, 45ch;
-    margin-top: 4rem;
-}
-
-#educacion p {
-    font-weight: 600;
-}
 
