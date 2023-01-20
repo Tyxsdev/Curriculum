@@ -111,9 +111,8 @@ span:hover {
 
 .material-symbols-outlined {
     text-decoration: none;
-    position: absolute;
-    top: 1.5rem;
-    left: 22rem;
+    display: block;
+    margin: 0 50%;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
