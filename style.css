@@ -6,6 +6,7 @@
     --color-four: #e8e8cf;
     --font-big: 2.5rem;
     --font-medium : 1.5rem;
+    --font-small: 1.2rem;
     background-color: var(--color-one);
     font-family: 'Ubuntu Mono', monospace;
     scroll-behavior: smooth;
@@ -58,7 +59,7 @@ h3 {
     text-decoration: underline;
 }
 
-#datos, #trabajos, #educacion {
+#datos, #trabajos, #educacion, footer {
     background-color: var(--color-two);
     border-radius: 3rem;
     padding: 2rem;
@@ -67,6 +68,7 @@ h3 {
     margin-right: 2rem;
     max-width: 100%, 45ch;
     margin-top: 4rem;
+    position: relative;
 }
 
 #datos p{
@@ -83,6 +85,7 @@ h3 {
 
 span {
     text-decoration: underline;
+    color: var(--color-three);
 }
 
 span:hover {
@@ -91,23 +94,26 @@ span:hover {
 
 .hidden {
     height: 25vh;
-    width: 25vw;
+    width: 20vw;
+    padding: 2rem;
     background-color: var(--color-four);
+    font-size: var(--font-small);
     position: absolute;
     border-radius: 3rem;
     display: none;
+    overflow: auto;
 }
 
 .primer-div{
     top: 2rem;
-    left: 12rem;
+    left: 24rem;
 }
 
 .material-symbols-outlined {
     text-decoration: none;
     position: absolute;
     top: 1.5rem;
-    left: 24rem;
+    left: 22rem;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
@@ -117,6 +123,16 @@ span:hover {
 
 .material-symbols-outlined:hover{
     cursor: pointer;
+}
+
+.segundo-div {
+    top: 11rem;
+    left: 8rem;
+}
+
+.tercer-div {
+    top: 20rem;
+    left: 7rem;
 }
 
 
