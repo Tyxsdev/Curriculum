@@ -84,23 +84,29 @@ span {
     text-decoration: underline;
 }
 
+span:hover {
+    cursor: pointer;
+}
+
 .hidden {
     height: 25vh;
     width: 25vw;
     background-color: var(--color-two);
     position: absolute;
-    top: 2rem;
-    left: 12rem;
     border-radius: 3rem;
     display: none;
 }
 
+.primer-div{
+    top: 2rem;
+    left: 12rem;
+}
 
 .material-symbols-outlined {
     text-decoration: none;
     position: absolute;
     top: 1.5rem;
-    left: 15rem;
+    left: 24rem;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
@@ -112,4 +118,14 @@ span {
     cursor: pointer;
 }
 
+#educacion {
+    font-size: var(--font-medium);
+    margin-left: 2rem;
+    max-width: 100%, 45ch;
+    margin-top: 4rem;
+}
+
+#educacion p {
+    font-weight: 600;
+}
 
