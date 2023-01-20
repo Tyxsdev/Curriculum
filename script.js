@@ -7,8 +7,6 @@ const closeSymbol = document.querySelectorAll('.material-symbols-outlined');
 function mostrarMas(e){
     for (let i = 0; i < arrayOfSpans.length; i++){
             if (arrayOfSpans[i].textContent === e.target.textContent){
-                console.log(arrayOfSpans[i]);
-                console.log(arrayOfDivs[i]);
                 arrayOfDivs[i].style.display = 'block';
                 break;
             }
