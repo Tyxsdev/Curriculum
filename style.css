@@ -2,12 +2,13 @@
     box-sizing: border-box;
     --color-one: #e8d887;
     --color-two: #ebe2ae;
+    --color-three: #46929c;
     --font-big: 2.5rem;
+    --font-medium : 1.5rem;
     background-color: var(--color-one);
     font-family: 'Ubuntu Mono', monospace;
+    scroll-behavior: smooth;
 }
-
-
 
 h1 {
     font-size: 3rem;
@@ -28,6 +29,54 @@ h1 {
 
 img {
     border-radius: 50px;
+}
+
+nav {
+    height: 3rem;
+    width: 99vw;
+    background-color: var(--color-two);
+    margin: 1rem 0 2rem;
+    font-size: var(--font-medium);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+a {
+    color: var(--color-three);
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+a:hover {
+    transform: scale(1.3);
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+#datos {
+    font-size: var(--font-medium);
+    margin-left: 2rem;
+    max-width: 100%, 45ch;
+    margin-top: 4rem;
+}
+
+#datos p{
+    font-weight: 600;
+}
+
+#trabajos {
+    font-size: var(--font-medium);
+    margin-left: 2rem;
+    max-width: 100%, 45ch;
+    margin-top: 4rem;
+}
+
+#trabajos p{
+    font-weight: 600;
 }
 
 
