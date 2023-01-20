@@ -1,25 +1,28 @@
-const primerSpan = document.querySelectorAll('span');
-const primerDiv = document.querySelector('.primer-div');
-const segundoDiv = document.querySelector('.segundo-div');
-const tercerDiv = document.querySelector('.tercer-div');
+const spans = document.querySelectorAll('.mostrar');
+const arrayOfSpans = Array.from(spans);
 const divs = document.querySelectorAll('div');
+const arrayOfDivs = Array.from(divs);
 const closeSymbol = document.querySelectorAll('.material-symbols-outlined');
 
 function mostrarMas(e){
-    let contenido = e.target.textContent;
-    if (contenido === 'Hospital San Antonio'){
-        primerDiv.style.display = 'block';
-    } else if (contenido === 'PEP Solutions'){
-        segundoDiv.style.display = 'block';
-    } else if (contenido === 'Floyd bar'){
-        tercerDiv.style.display = 'block';
-    }
+    for (let i = 0; i < arrayOfSpans.length; i++){
+            if (arrayOfSpans[i].textContent === e.target.textContent){
+                console.log(arrayOfSpans[i]);
+                console.log(arrayOfDivs[i]);
+                arrayOfDivs[i].style.display = 'block';
+                break;
+            }
+        }
 }
 
-primerSpan.forEach(span => span.addEventListener('click', mostrarMas))
+spans.forEach(span => span.addEventListener('click', mostrarMas))
 
 function cerrar(e){
-    divs.forEach(div => div.style.display='none');
+    for (let i = 0; i < arrayOfDivs.length; i++){
+        if (arrayOfDivs[i].contains(e.target)){
+            arrayOfDivs[i].style.display='none'
+        }
+    }
 }
 
 closeSymbol.forEach(x => x.addEventListener('click', cerrar));
