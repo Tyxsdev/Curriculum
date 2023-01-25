@@ -5,6 +5,7 @@
     --color-two: #ebe2ae;
     --color-three: #46929c;
     --color-four: #e8e8cf;
+    --color-five: #94938f;
     --font-big: 2.5rem;
     --font-medium : 1.5rem;
     --font-small: 1.2rem;
@@ -28,6 +29,11 @@ h1 {
     font-size: var(--font-big);
     background-color: var(--color-two);
     border-radius: 50px;
+    box-shadow: 5px 3px 2px var(--color-five);
+}
+
+.mail:hover {
+    transform: scale(1.1);
 }
 
 img {
@@ -44,6 +50,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    box-shadow: 5px 3px 2px var(--color-five);
 }
 
 a {
@@ -70,6 +77,7 @@ h3 {
     max-width: 100%, 45ch;
     margin-top: 4rem;
     position: relative;
+    box-shadow: 5px 3px 2px var(--color-five);
 }
 
 #datos p{
